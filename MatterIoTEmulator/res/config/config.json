@@ -1,0 +1,734 @@
+{
+    "version": 2.1,
+    "main_path": "/matter-emulator/MatterIoTEmulator",
+    "qrtool_subpath": "/tool/",
+    "max_number_of_device": 15,
+    "parameter_constraints": {
+        "serial_number": {
+            "default_value": 66464649154822,
+            "range" : [1, 9223372036854775807]
+            },
+        "vendor_id": {
+            "default_value": 65521,
+            "range" : [65521]
+            },
+        "product_id": {
+            "default_value": 32768,
+            "range" : [32768, 32799]
+            },
+        "discriminator": {
+            "default_value": 3851,
+            "range" : [0, 4095]
+            },
+        "pin_code": {
+            "default_value": 20222023,
+            "range" : [1, 99999998]
+            }
+    },
+    "serial_number_list": [
+        "6002248829961909524",
+        "6921238115407929496",
+        "7626963124938903389",
+        "2073221257978332490",
+        "3957838079739582840",
+        "8818095388640854520",
+        "1795082174304132643",
+        "977443105016929468",
+        "280707040284312631",
+        "1052152040695922986",
+        "1067793285220423275",
+        "8650176850154750578",
+        "7874366387595048762",
+        "1159553127949419850",
+        "6951342034215031142",
+        "4496725963772311573"
+    ],
+    "device_list": [
+        "On/Off Light(0x0100)",
+        "Dimmable Light(0x0101)",
+        "Color Temperature Light(0x010C)",
+        "Extended Color Light(0x010D)",
+        "On/Off Plug-in Unit(0x010A)",
+        "Dimmable Plug-in Unit(0x010B)",
+        "Pump(0x0303)",
+        "Contact Sensor(0x0015)",
+        "Light Sensor(0x0106)",
+        "Occupancy Sensor(0x0107)",
+        "Temperature Sensor(0x0302)",
+         "Pressure Sensor(0x0305)",
+        "Flow Sensor(0x0306)",
+        "Humidity Sensor(0x0307)",
+        "Door Lock(0x000A)",
+        "Window Covering(0x0202)",
+        "HeatingCoolingUnit(0x0300)",
+        "Thermostat(0x0301)",
+        "Fan(0x002B)",
+        "Air Purifier(0x002D)",
+        "Air Quality Sensor(0x002C)",
+        "Dishwasher(0x0075)",
+        "Laundry Washer(0x0073)",
+        "Room Air Conditioner(0x0072)",
+        "Refrigerator(0x0070)",
+        "Smoke&Carbon Alarm(0x0076)",
+        "Robot Vaccum Cleaner(0x0074)",
+        "Generic Switch(0x000F)"
+    ],
+    "device_types": [
+        {
+            "device_name": "Smoke&Carbon Alarm",
+            "device_id": "0x0076",
+            "device_group": "sensor",
+            "sub_path": "/device_apps/chip-smoke-co-alarm-app",
+            "main_icon": "res/sensor/smoke-co-alarm.png",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                }
+            ]
+        }
+        ,
+        {
+            "device_name": "Generic Switch",
+            "device_id": "0x000F",
+            "device_group": "switch and control",
+            "sub_path": "/device_apps/generic-switch-app",
+            "main_icon": "res/switchs/generic_switch.png",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                },
+                {
+                    "name": "Level",
+                    "type": "Slide"
+                }
+            ]
+        }
+        ,
+        {
+            "device_name": "Robot Vaccum Cleaner",
+            "device_id": "0x0074",
+            "device_group": "robotic",
+            "sub_path": "/device_apps/chip-rvc-app",
+            "main_icon": "res/robotic/robotic.png",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                }
+            ]
+        },
+        {
+            "device_name": "Refrigerator",
+            "device_id": "0x0070",
+            "device_group": "Appliances",
+            "sub_path": "/device_apps/chip-refrigerator-app",
+            "main_icon": "res/appliances/temperature-controller-cabinet.png",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                }
+            ]
+        },
+        {
+            "device_name": "Room Air Conditioner",
+            "device_id": "0x0072",
+            "device_group": "Appliances",
+            "sub_path": "/device_apps/chip-room-air-conditioner-app",
+            "main_icon": "res/appliances/room-air-conditioner.png",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                }
+            ]
+        },
+        {
+            "device_name": "Laundry Washer",
+            "device_id": "0x0073",
+            "device_group": "Appliances",
+            "sub_path": "/device_apps/laundry-washer-app",
+            "main_icon": "res/appliances/diswasher.png",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                }
+            ]
+        },
+        {
+            "device_name": "Dishwasher",
+            "device_id": "0x0075",
+            "device_group": "Appliances",
+            "sub_path": "/device_apps/chip-dishwasher-app",
+            "main_icon": "res/appliances/diswasher.png",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                }
+            ]
+        },
+        {
+            "device_name": "Air Quality Sensor",
+            "device_id": "0x002C",
+            "device_group": "Sensor",
+            "sub_path": "/device_apps/air-quality-sensor-app",
+            "main_icon": "res/HVAC/air-purifier.png",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                }
+            ]
+        },
+        {
+            "device_name": "Air Purifier",
+            "device_id": "0x002D",
+            "device_group": "HVAC",
+            "sub_path": "/device_apps/chip-air-purifier-app",
+            "main_icon": "res/HVAC/air-purifier.png",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                }
+            ]
+        },
+        {
+            "device_name": "On/Off Light",
+            "device_id": "0x0100",
+            "device_group": "lighting",
+            "sub_path": "/device_apps/on-off-lighting-app",
+            "main_icon": "res/lighting/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                }
+            ]
+        },
+        {
+            "device_name": "Dimmable Light",
+            "device_id": "0x0101",
+            "device_group": "lighting",
+            "sub_path": "/device_apps/dimmable-lighting-app",
+            "main_icon": "res/lighting/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                },
+                {
+                    "name": "Level",
+                    "type": "Slide"
+                }
+            ]
+        },
+        {
+            "device_name": "Color Temperature Light",
+            "device_id": "0x010C",
+            "device_group": "lighting",
+            "sub_path": "/device_apps/color-temperature-lighting-app",
+            "main_icon": "res/lighting/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                },
+                {
+                    "name": "Level",
+                    "type": "Slide"
+                }
+            ]
+        },
+        {
+            "device_name": "Extended Color Light",
+            "device_id": "0x010D",
+            "device_group": "lighting",
+            "sub_path": "/device_apps/extended-color-lighting-app",
+            "main_icon": "res/lighting/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                },
+                {
+                    "name": "Level",
+                    "type": "Slide"
+                }
+            ]
+        },
+        {
+            "device_name": "On/Off Plug-in Unit",
+            "device_id": "0x010A",
+            "device_group": "smart plugs",
+            "sub_path": "/device_apps/on-off-plugin-unit-app",
+            "main_icon": "res/icons/smart_plug_main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                }
+            ]
+        },
+        {
+            "device_name": "Dimmable Plug-in Unit",
+            "device_id": "0x010B",
+            "device_group": "smart plugs",
+            "sub_path": "/device_apps/dimmable-plugin-unit-app",
+            "main_icon": "res/icons/smart_plug_main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                },
+                {
+                    "name": "Level",
+                    "type": "Slide"
+                }
+            ]
+        },
+        {
+            "device_name": "Pump",
+            "device_id": "0x0303",
+            "device_group": "pump",
+            "sub_path": "/device_apps/pump-app",
+            "main_icon": "res/pump/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                },
+                {
+                    "name": "Level",
+                    "type": "Slide"
+                }
+            ]
+        }
+        ,
+        {
+            "device_name": "On/Off Light Switch",
+            "device_id": "0x0103",
+            "device_group": "switch and control",
+            "sub_path": "/device_apps/on-off-light-switch-app",
+            "main_icon": "res/switch/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                },
+                {
+                    "name": "Level",
+                    "type": "Slide"
+                }
+            ]
+        }
+        ,
+        {
+            "device_name": "Dimmer Switch",
+            "device_id": "0x0104",
+            "device_group": "switch and control",
+            "sub_path": "/device_apps/dimmer-switch-app",
+            "main_icon": "res/switch/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                },
+                {
+                    "name": "Level",
+                    "type": "Slide"
+                }
+            ]
+        }
+        ,
+        {
+            "device_name": "Color Dimmer Switch",
+            "device_id": "0x0105",
+            "device_group": "switch and control",
+            "sub_path": "/device_apps/color-dimmer-switch-app",
+            "main_icon": "res/switch/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                },
+                {
+                    "name": "Level",
+                    "type": "Slide"
+                }
+            ]
+        }
+        ,
+        {
+            "device_name": "Control Bridge",
+            "device_id": "0x0840",
+            "device_group": "switch and control",
+            "sub_path": "/device_apps/control-bridge-app",
+            "main_icon": "res/switch/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                },
+                {
+                    "name": "Level",
+                    "type": "Slide"
+                }
+            ]
+        }
+        ,
+        {
+            "device_name": "Pump Controller",
+            "device_id": "0x0304",
+            "device_group": "switch and control",
+            "sub_path": "/device_apps/pump-control-app",
+            "main_icon": "res/switch/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                },
+                {
+                    "name": "Level",
+                    "type": "Slide"
+                }
+            ]
+        }
+        ,
+        {
+            "device_name": "Pump Controller",
+            "device_id": "0x0304",
+            "device_group": "switch and control",
+            "sub_path": "/device_apps/pump-control-app",
+            "main_icon": "res/switch/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                },
+                {
+                    "name": "Level",
+                    "type": "Slide"
+                }
+            ]
+        }
+        ,
+        {
+            "device_name": "Contact Sensor",
+            "device_id": "0x0015",
+            "device_group": "sensor",
+            "sub_path": "/device_apps/contact-sensor-app",
+            "main_icon": "res/switch/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                }
+            ]
+        }
+        ,
+        {
+            "device_name": "Light Sensor",
+            "device_id": "0x0106",
+            "device_group": "sensor",
+            "sub_path": "/device_apps/light-sensor-app",
+            "main_icon": "res/switch/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            },
+            "function": [
+                {
+                    "name": "On/Off",
+                    "type": "Switch"
+                }
+            ]
+        }
+        ,
+        {
+            "device_name": "Occupancy Sensor",
+            "device_id": "0x0107",
+            "device_group": "sensor",
+            "sub_path": "/device_apps/occupancy-sensor-app",
+            "main_icon": "res/switch/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            }
+        }
+        ,
+        {
+            "device_name": "Temperature Sensor",
+            "device_id": "0x0302",
+            "device_group": "sensor",
+            "sub_path": "/device_apps/temperature-sensor-app",
+            "main_icon": "res/switch/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            }
+        }
+        ,
+        {
+            "device_name": "Pressure Sensor",
+            "device_id": "0x0305",
+            "device_group": "sensor",
+            "sub_path": "/device_apps/pressure-sensor-app",
+            "main_icon": "res/switch/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            }
+        }
+        ,
+        {
+            "device_name": "Flow Sensor",
+            "device_id": "0x0306",
+            "device_group": "sensor",
+            "sub_path": "/device_apps/flow-sensor-app",
+            "main_icon": "res/switch/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            }
+        }
+        ,
+        {
+            "device_name": "Humidity Sensor",
+            "device_id": "0x0307",
+            "device_group": "sensor",
+            "sub_path": "/device_apps/humidity-sensor-app",
+            "main_icon": "res/switch/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            }
+        }
+         ,
+        {
+            "device_name": "Door Lock",
+            "device_id": "0x000A",
+            "device_group": "closure",
+            "sub_path": "/device_apps/chip-lock-app",
+            "main_icon": "res/closure/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            }
+        }
+        ,
+        {
+            "device_name": "Window Covering",
+            "device_id": "0x0202",
+            "device_group": "closure",
+            "sub_path": "/device_apps/window-covering-app",
+            "main_icon": "res/closure/main_icon.svg",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            }
+        },
+        
+        {
+            "device_name": "Fan",
+            "device_id": "0x002B",
+            "device_group": "HVAC",
+            "sub_path": "/device_apps/fan-app",
+            "main_icon": "res/HVAC/fan.png",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            }
+        }
+        ,
+        {
+            "device_name": "Thermostat",
+            "device_id": "0x0301",
+            "device_group": "HVAC",
+            "sub_path": "/device_apps/thermostat-app",
+            "main_icon": "res/HVAC/thermostat.png",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            }
+        }
+        ,
+        {
+            "device_name": "HeatingCoolingUnit",
+            "device_id": "0x0300",
+            "device_group": "HVAC",
+            "sub_path": "/device_apps/heating-cooling-unit-app",
+            "main_icon": "res/HVAC/heating-unit.png",
+            "config_info": {
+                "vendor_id": "65521",
+                "product_id": "32769",
+                "discriminator": "3840",
+                "pin_code": "20202021"
+            }
+        }
+    ]
+}
+
+

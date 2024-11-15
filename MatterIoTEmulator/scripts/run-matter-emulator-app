@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Get the full path of the script
+script_path=$(realpath "$0")
+script_directory=$(dirname "$script_path")
+
+#echo "Script path: $script_path"
+echo "Script directory: $script_directory"
+
+# Move to the Emulator App directory
+cd "$script_directory" & cd "../"
+
+# Run Emulator IoT App
+python3 app.py

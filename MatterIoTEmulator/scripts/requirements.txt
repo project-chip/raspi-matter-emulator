@@ -1,0 +1,10 @@
+Pillow==9.4.0
+pyinstaller==5.7.0
+pyinstaller-hooks-contrib==2022.14
+pywin32-ctypes==0.2.0
+qrcode==7.3.1
+qtwidgets==0.18
+psutil==5.9.8
+flake8==7.1.1
+bitarray==2.6.0
+python_stdnum==1.18
