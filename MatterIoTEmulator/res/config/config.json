@@ -1,29 +1,43 @@
 {
     "version": 2.1,
-    "main_path": "/matter-emulator/MatterIoTEmulator",
+    "main_path": "/raspi-matter-emulator/MatterIoTEmulator",
     "qrtool_subpath": "/tool/",
     "max_number_of_device": 15,
     "parameter_constraints": {
         "serial_number": {
             "default_value": 66464649154822,
-            "range" : [1, 9223372036854775807]
-            },
+            "range": [
+                1,
+                9223372036854775807
+            ]
+        },
         "vendor_id": {
             "default_value": 65521,
-            "range" : [65521]
-            },
+            "range": [
+                65521
+            ]
+        },
         "product_id": {
             "default_value": 32768,
-            "range" : [32768, 32799]
-            },
+            "range": [
+                32768,
+                32799
+            ]
+        },
         "discriminator": {
             "default_value": 3851,
-            "range" : [0, 4095]
-            },
+            "range": [
+                0,
+                4095
+            ]
+        },
         "pin_code": {
             "default_value": 20222023,
-            "range" : [1, 99999998]
-            }
+            "range": [
+                1,
+                99999998
+            ]
+        }
     },
     "serial_number_list": [
         "6002248829961909524",
@@ -55,7 +69,7 @@
         "Light Sensor(0x0106)",
         "Occupancy Sensor(0x0107)",
         "Temperature Sensor(0x0302)",
-         "Pressure Sensor(0x0305)",
+        "Pressure Sensor(0x0305)",
         "Flow Sensor(0x0306)",
         "Humidity Sensor(0x0307)",
         "Door Lock(0x000A)",
@@ -92,8 +106,7 @@
                     "type": "Switch"
                 }
             ]
-        }
-        ,
+        },
         {
             "device_name": "Generic Switch",
             "device_id": "0x000F",
@@ -116,8 +129,7 @@
                     "type": "Slide"
                 }
             ]
-        }
-        ,
+        },
         {
             "device_name": "Robot Vaccum Cleaner",
             "device_id": "0x0074",
@@ -403,8 +415,7 @@
                     "type": "Slide"
                 }
             ]
-        }
-        ,
+        },
         {
             "device_name": "On/Off Light Switch",
             "device_id": "0x0103",
@@ -427,8 +438,7 @@
                     "type": "Slide"
                 }
             ]
-        }
-        ,
+        },
         {
             "device_name": "Dimmer Switch",
             "device_id": "0x0104",
@@ -451,8 +461,7 @@
                     "type": "Slide"
                 }
             ]
-        }
-        ,
+        },
         {
             "device_name": "Color Dimmer Switch",
             "device_id": "0x0105",
@@ -475,8 +484,7 @@
                     "type": "Slide"
                 }
             ]
-        }
-        ,
+        },
         {
             "device_name": "Control Bridge",
             "device_id": "0x0840",
@@ -499,8 +507,7 @@
                     "type": "Slide"
                 }
             ]
-        }
-        ,
+        },
         {
             "device_name": "Pump Controller",
             "device_id": "0x0304",
@@ -523,8 +530,7 @@
                     "type": "Slide"
                 }
             ]
-        }
-        ,
+        },
         {
             "device_name": "Pump Controller",
             "device_id": "0x0304",
@@ -547,8 +553,7 @@
                     "type": "Slide"
                 }
             ]
-        }
-        ,
+        },
         {
             "device_name": "Contact Sensor",
             "device_id": "0x0015",
@@ -567,8 +572,7 @@
                     "type": "Switch"
                 }
             ]
-        }
-        ,
+        },
         {
             "device_name": "Light Sensor",
             "device_id": "0x0106",
@@ -587,8 +591,7 @@
                     "type": "Switch"
                 }
             ]
-        }
-        ,
+        },
         {
             "device_name": "Occupancy Sensor",
             "device_id": "0x0107",
@@ -601,8 +604,7 @@
                 "discriminator": "3840",
                 "pin_code": "20202021"
             }
-        }
-        ,
+        },
         {
             "device_name": "Temperature Sensor",
             "device_id": "0x0302",
@@ -615,8 +617,7 @@
                 "discriminator": "3840",
                 "pin_code": "20202021"
             }
-        }
-        ,
+        },
         {
             "device_name": "Pressure Sensor",
             "device_id": "0x0305",
@@ -629,8 +630,7 @@
                 "discriminator": "3840",
                 "pin_code": "20202021"
             }
-        }
-        ,
+        },
         {
             "device_name": "Flow Sensor",
             "device_id": "0x0306",
@@ -643,8 +643,7 @@
                 "discriminator": "3840",
                 "pin_code": "20202021"
             }
-        }
-        ,
+        },
         {
             "device_name": "Humidity Sensor",
             "device_id": "0x0307",
@@ -657,8 +656,7 @@
                 "discriminator": "3840",
                 "pin_code": "20202021"
             }
-        }
-         ,
+        },
         {
             "device_name": "Door Lock",
             "device_id": "0x000A",
@@ -671,8 +669,7 @@
                 "discriminator": "3840",
                 "pin_code": "20202021"
             }
-        }
-        ,
+        },
         {
             "device_name": "Window Covering",
             "device_id": "0x0202",
@@ -686,7 +683,6 @@
                 "pin_code": "20202021"
             }
         },
-        
         {
             "device_name": "Fan",
             "device_id": "0x002B",
@@ -699,8 +695,7 @@
                 "discriminator": "3840",
                 "pin_code": "20202021"
             }
-        }
-        ,
+        },
         {
             "device_name": "Thermostat",
             "device_id": "0x0301",
@@ -713,8 +708,7 @@
                 "discriminator": "3840",
                 "pin_code": "20202021"
             }
-        }
-        ,
+        },
         {
             "device_name": "HeatingCoolingUnit",
             "device_id": "0x0300",
@@ -730,5 +724,3 @@
         }
     ]
 }
-
-

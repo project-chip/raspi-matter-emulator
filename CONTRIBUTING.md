@@ -11,14 +11,14 @@ project guidelines for contributing code.
 # Contributing as an Open Source Contributor
 
 As an open source contributor you can report bugs and request features in the
-[Issue Tracker](https://github.com/project-chip/matter-emulator/issues), as well
+[Issue Tracker](https://github.com/project-chip/raspi-matter-emulator/issues), as well
 as contribute bug fixes and features that do not impact Matter specification as
 a pull request. For example: ports of Matter to add APIs to alternative
 programming languages (e.g. Java, JS), hardware ports, or an optimized
 implementation of existing functionality. For features that impact the
 specification, please join Matter work group within the Connectivity Standards
 Alliance. The requirements to become an open source contributor of the
-[Matter Repository](https://github.com/project-chip/matter-emulator) are:
+[Matter Repository](https://github.com/project-chip/raspi-matter-emulator) are:
 
 -   Agree to the [Code of Conduct](./CODE_OF_CONDUCT.md)
 -   Agree to the [License](./LICENSE)
@@ -31,7 +31,7 @@ As a participant of the Connectivity Standards Alliance Matter Working Group,
 you can attend Working Group meetings, propose changes to the Matter
 specification, and contribute code for approved updates to the specification.
 The requirements to become a member of the
-[Matter Repository](https://github.com/project-chip/matter-emulator) are:
+[Matter Repository](https://github.com/project-chip/raspi-matter-emulator) are:
 
 -   Must be a [Participant member](http://www.zigbeealliance.org/join) or higher
     of the Connectivity Standards Alliance
@@ -42,28 +42,28 @@ The requirements to become a member of the
 # Bugs
 
 If you find a bug in the source code, you can help us by
-[submitting a GitHub Issue](https://github.com/project-chip/matter-emulator/issues/new).
+[submitting a GitHub Issue](https://github.com/project-chip/raspi-matter-emulator/issues/new).
 The best bug reports provide a detailed description of the issue and
 step-by-step instructions for predictably reproducing the issue. Even better,
 you can
-[submit a Pull Request](https://github.com/project-chip/matter-emulator/blob/master/CONTRIBUTING.md#submitting-a-pull-request)
+[submit a Pull Request](https://github.com/project-chip/raspi-matter-emulator/blob/master/CONTRIBUTING.md#submitting-a-pull-request)
 with a fix.
 
 # New Features
 
 You can request a new feature by
-[submitting a GitHub Issue](https://github.com/project-chip/matter-emulator/issues/new).
+[submitting a GitHub Issue](https://github.com/project-chip/raspi-matter-emulator/issues/new).
 If you would like to implement a new feature, please consider the scope of the
 new feature:
 
 -   _Large feature_: first
-    [submit a GitHub Issue](https://github.com/project-chip/matter-emulator/issues/new)
+    [submit a GitHub Issue](https://github.com/project-chip/raspi-matter-emulator/issues/new)
     and communicate your proposal so that the community can review and provide
     feedback. Getting early feedback will help ensure your implementation work
     is accepted by the community. This will also allow us to better coordinate
     our efforts and minimize duplicated effort.
 -   _Small feature_: can be implemented and directly
-    [submitted as a Pull Request](https://github.com/project-chip/matter-emulator/blob/master/CONTRIBUTING.md#submitting-a-pull-request).
+    [submitted as a Pull Request](https://github.com/project-chip/raspi-matter-emulator/blob/master/CONTRIBUTING.md#submitting-a-pull-request).
 
 # Contributing Code
 
@@ -73,7 +73,7 @@ Matter follows the "Fork-and-Pull" model for accepting contributions.
 
 Setup your GitHub fork and continuous-integration services:
 
-1. Fork the [Matter repository](https://github.com/project-chip/matter-emulator)
+1. Fork the [Matter repository](https://github.com/project-chip/raspi-matter-emulator)
    by clicking "Fork" on the web UI.
 
 2. All contributions must pass all checks and reviews to be accepted.

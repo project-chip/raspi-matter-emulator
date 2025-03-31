@@ -1,4 +1,4 @@
-# Raspberry-Pi Matter IoT Emulator 
+# Raspberry-Pi Matter IoT Emulator
 
     - This repo is created to implement Matter IoT Emulator to simulation matter device (https://github.com/project-chip/connectedhomeip/tree/v1.2.0.1), written on Python3
     - Virtual matter devices build on linux platform
@@ -21,20 +21,23 @@
 -   Raspberry PI Image Tool Tool:https://www.raspberrypi.com/news/raspberry-pi-imager-imaging-utility/
 
 ### 1. Clone this repository
-    git clone https://github.com/project-chip/raspi-matter-emulator.git
+
+    git clone https://github.com/project-chip/raspi-raspi-matter-emulator.git
 
 ### 2. Run Installer
-    cd raspi-matter-emulator/scripts/
+
+    cd raspi-raspi-matter-emulator/scripts/
     ./install.sh
 
 ## Usage
 
 ### 1. Run Matter IoT Emulator
+
 After installing the environment successfully without errors. You can enjoy with Matter IoT Emulator.
 ensure that your Pi is connected to Ethernet or WiFi
 
-    cd raspi-matter-emulator/scripts/
-    ./run-matter-emulator-app
+    cd raspi-raspi-matter-emulator/scripts/
+    ./run-raspi-matter-emulator-app
 
     After Matter IoT Emulator launched success:
     - On the left side "Device Type" label:
@@ -54,5 +57,6 @@ ensure that your Pi is connected to Ethernet or WiFi
     - When click "X" button on the right of device tab name, this device will be deleted and can not be recovered
 
 ### 2. Remove un-use commissioned devices
-    cd raspi-matter-emulator/MatterIoTEmulator/temp/
+
+    cd raspi-raspi-matter-emulator/MatterIoTEmulator/temp/
     rm -r <folder_name> (folder_name is a combination of VID, PID and SerialNumber in hexa, EX: VID: 0xffff, PID: 0x8001, SerialNumber: 0x1111 -> folder_name: ffff8001-1111)
