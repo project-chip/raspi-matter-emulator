@@ -259,7 +259,7 @@ out of convenience.
 
 Matter uses Doxygen to markup (or markdown) all C, C++, Objective C, Objective
 C++, Perl, Python, and Java code. Read our
-[Doxygen Best Practices, Conventions, and Style](https://github.com/project-chip/connectedhomeip/blob/master/docs/style/DOXYGEN.adoc)
+[Doxygen Best Practices, Conventions, and Style](https://github.com/project-chip/raspi-matter-emulator/blob/master/docs/style/DOXYGEN.adoc)
 
 #### Submit Pull Request
 
