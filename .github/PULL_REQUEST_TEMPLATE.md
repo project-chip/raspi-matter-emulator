@@ -12,7 +12,7 @@
 >
 > Complete/append to the `### Testing` section above, to describe how testing
 > was done. See
-> <https://github.com/project-chip/connectedhomeip/blob/master/CONTRIBUTING.md#pull-requests>
+> <https://github.com/project-chip/raspi-matter-emulator/blob/master/CONTRIBUTING.md#pull-requests>
 >
 > Make sure you delete these instructions (to prove you have read them).
 >
