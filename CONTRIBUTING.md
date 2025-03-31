@@ -82,7 +82,7 @@ Setup your local development environment:
 
 ```bash
 # Clone your fork
-git clone git@github.com:<username>/connectedhomeip.git
+git clone git@github.com:<username>/raspi-matter-emulator.git
 
 # Configure upstream alias
 git remote add upstream git@github.com:project-chip/connectedhomeip.git
