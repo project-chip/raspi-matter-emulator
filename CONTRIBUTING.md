@@ -85,7 +85,7 @@ Setup your local development environment:
 git clone git@github.com:<username>/raspi-matter-emulator.git
 
 # Configure upstream alias
-git remote add upstream git@github.com:project-chip/connectedhomeip.git
+git remote add upstream git@github.com:project-chip/raspi-matter-emulator.git
 ```
 
 ### Submitting a Pull Request
