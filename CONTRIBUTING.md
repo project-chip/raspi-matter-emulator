@@ -283,7 +283,7 @@ into master
 #### Documentation
 
 Documentation undergoes the same review process as code See the
-[Documentation Style Guide](https://github.com/project-chip/raspi-matter-emulator/blob/master/docs/STYLE_GUIDE.md)
+[Documentation Style Guide](https://github.com/project-chip/raspi-matter-emulator/blob/master/docs/style/CODING_STYLE_GUIDE.md)
 for more information on how to author and format documentation for contribution.
 
 ## Merge Processes
